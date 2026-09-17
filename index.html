@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wanx AI — Research lab: enterprise software, model fine-tuning, and data pipelines</title>
+<meta name="description" content="Wanx AI is a research lab that ships — production software, model training/fine-tuning, and the data pipelines and agentic systems that run them at real scale, for a fraction of naive AI infrastructure cost.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top">Wanx AI</a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#partners">Partners</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#partners">Partners</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">AI systems that hold up after the demo ends.</h1>
+      <p class="hero-desc">
+        Wanx AI is a research lab that ships. We train and fine-tune ML models, build the data
+        pipelines and agentic systems that run them at real scale, and turn the resulting research
+        into production software — for a fraction of what naive AI infrastructure costs. Remote-first,
+        working with clients globally.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Talk to us</a>
+        <a href="#work" class="btn btn-ghost">See the work</a>
+      </div>
+    </div>
+
+    <div class="ledger" role="img" aria-label="Cost comparison: routing full data through model context costs $15,000 per million files; Wanx AI's observation-masking pipeline costs $2.40 per million files.">
+      <p class="ledger-caption">Same task, two architectures — cost per 1,000,000 files processed</p>
+      <div class="ledger-row">
+        <span class="ledger-label">Routing full data through model context</span>
+        <span class="ledger-fill"></span>
+        <span class="ledger-value ledger-value--bad">$15,000</span>
+      </div>
+      <div class="ledger-row">
+        <span class="ledger-label">Wanx AI observation-masking pipeline</span>
+        <span class="ledger-fill"></span>
+        <span class="ledger-value ledger-value--good">$2.40</span>
+      </div>
+      <p class="ledger-note">From AIDAW, our agentic media-processing engine — <a href="#work">details below</a>.</p>
+    </div>
+  </section>
+
+  <!-- PROOF STRIP -->
+  <section class="proof">
+    <div class="proof-inner">
+      <div class="proof-item">
+        <span class="proof-num">2.5M</span>
+        <span class="proof-label">files indexed in ~3 minutes, millisecond search</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">4</span>
+        <span class="proof-label">LLM providers supported — Claude, GPT, Grok, local Ollama</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">70+</span>
+        <span class="proof-label">tools across a 5-agent production architecture</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">99%+</span>
+        <span class="proof-label">cost reduction versus naive LLM-context routing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <h2 class="section-title">What we build</h2>
+      <p class="section-sub">Three capabilities, one team — software, models, and the data layer underneath them.</p>
+    </div>
+
+    <div class="service-list">
+      <article class="service">
+        <h3 class="service-title">Enterprise software</h3>
+        <p class="service-desc">
+          Production systems, not prototypes — backend architecture, databases, integrations, and the
+          operational tooling that makes software usable by a real team on day one.
+        </p>
+        <p class="service-proof">Proof: GarageOS — multi-branch operations platform. FastAPI, PostgreSQL, Next.js, M-Pesa payments built in.</p>
+      </article>
+
+      <article class="service">
+        <h3 class="service-title">Model training &amp; fine-tuning</h3>
+        <p class="service-desc">
+          When a general-purpose model isn't accurate enough on your data, we adapt one that is —
+          LoRA fine-tuning, evaluation harnesses, and the failure analysis that tells you exactly
+          where a model still breaks.
+        </p>
+        <p class="service-proof">Proof: R.O.A.D. — Qwen3-VL fine-tuned for historical handwriting recognition on degraded archival records. Hydra II — a production text-to-music model.</p>
+      </article>
+
+      <article class="service">
+        <h3 class="service-title">Data pipelines &amp; agentic automation</h3>
+        <p class="service-desc">
+          Multi-agent systems that process real volume without the context bill exploding. We design
+          the data layer first, then build agents that only look at what they actually need to.
+        </p>
+        <p class="service-proof">Proof: AIDAW — 2.5M files indexed in ~3 minutes, 70+ tools across 5 agents, 4 LLM providers.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WORK / CASE STUDIES -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <h2 class="section-title">Selected work</h2>
+      <p class="section-sub">Systems we designed, built, and shipped — with the numbers to back them up.</p>
+    </div>
+
+    <div class="case-grid">
+      <article class="case case--feature">
+        <div class="case-top">
+          <span class="case-tag">Data pipelines &amp; agentic automation</span>
+          <a href="https://github.com/ageraustine/daw-agents" target="_blank" rel="noopener" class="case-link">github.com/ageraustine/daw-agents ↗</a>
+        </div>
+        <h3 class="case-title">AIDAW — Agentic Petabyte-Scale Media Engine</h3>
+        <p class="case-desc">
+          A 5-agent system (Supervisor, Reaper, FFmpeg, Search, Data — 70+ tools) that lets studios process
+          millions of media files through natural language instead of manual pipelines.
+        </p>
+        <ul class="case-points">
+          <li><strong>Observation masking:</strong> large datasets stay in SQLite; only metadata reaches the LLM while agents exchange data directly — a 99%+ cost cut versus routing full data through model context.</li>
+          <li><strong>Scale:</strong> indexing that handles millions of files (2.5M indexed in ~3 minutes) with millisecond search, across Claude, GPT, Grok, and local Ollama.</li>
+        </ul>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="case-tag">Enterprise software</span>
+          <a href="https://github.com/ageraustine/garageos" target="_blank" rel="noopener" class="case-link">github.com/ageraustine/garageos ↗</a>
+        </div>
+        <h3 class="case-title">GarageOS</h3>
+        <p class="case-desc">
+          A trust-infrastructure platform for multi-branch auto-repair chains — real-time customer
+          transparency, M-Pesa payments, and a weighted Trust Score computed per job.
+        </p>
+        <ul class="case-points">
+          <li>Magic-link repair tracking over WhatsApp/SMS — no app install required.</li>
+          <li>Full job workflow, HR module, and multi-branch HQ visibility on a FastAPI + PostgreSQL + Next.js stack.</li>
+        </ul>
+      </article>
+
+      <article class="case">
+        <div class="case-top">
+          <span class="case-tag">Model training &amp; fine-tuning</span>
+          <a href="https://github.com/ageraustine/OCR-ROAD-BARBADOS" target="_blank" rel="noopener" class="case-link">github.com/ageraustine/OCR-ROAD-BARBADOS ↗</a>
+        </div>
+        <h3 class="case-title">R.O.A.D. — Historical HTR Pipeline</h3>
+        <p class="case-desc">
+          A fine-tuning and evaluation pipeline for historical document handwriting recognition, built
+          on Qwen3-VL and tuned for degraded archival records.
+        </p>
+        <ul class="case-points">
+          <li>Asymmetric LoRA — high-rank adapters on the vision tower, lower-rank on the language model.</li>
+          <li>Condition-aware augmentation that scores each document before deciding how to process it.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners" id="partners">
+    <div class="section-head">
+      <h2 class="section-title">Who we've built for</h2>
+      <p class="section-sub">Two engagements, two very different problems — the pattern underneath is the same research-to-production pipeline.</p>
+    </div>
+
+    <div class="partner-list">
+      <article class="partner">
+        <div class="partner-top">
+          <h3 class="partner-name">The Action Foundation</h3>
+          <a href="https://theactionfoundationkenya.org/" target="_blank" rel="noopener" class="partner-link">theactionfoundationkenya.org ↗</a>
+        </div>
+        <p class="partner-desc">
+          A Nairobi-based NGO working toward an Africa where children and youth with disabilities can
+          realise their full potential. We built an early-childhood-development content generation app
+          for them — combining generated background music with unique synthesized narrator voices to
+          produce accessible storytelling content.
+        </p>
+      </article>
+
+      <article class="partner">
+        <div class="partner-top">
+          <h3 class="partner-name">Rightsify</h3>
+          <a href="https://www.rightsify.com/" target="_blank" rel="noopener" class="partner-link">rightsify.com ↗</a>
+        </div>
+        <p class="partner-desc">
+          An AI music company building synthetic training datasets and licensing infrastructure for the
+          music industry. We build and maintain Hydra II, their production text-to-music generation model —
+          from research and training through deployment and ongoing evaluation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="approach" id="approach">
+    <div class="section-head">
+      <h2 class="section-title">How we work</h2>
+      <p class="section-sub">The same four steps on every engagement, in order.</p>
+    </div>
+
+    <ol class="approach-list">
+      <li class="approach-step">
+        <span class="approach-index">1</span>
+        <div>
+          <h3>Scope</h3>
+          <p>We turn your requirements into a precise technical specification before any code is written.</p>
+        </div>
+      </li>
+      <li class="approach-step">
+        <span class="approach-index">2</span>
+        <div>
+          <h3>Build</h3>
+          <p>Engineers — not just prompts — implement the system, with evaluation criteria defined upfront.</p>
+        </div>
+      </li>
+      <li class="approach-step">
+        <span class="approach-index">3</span>
+        <div>
+          <h3>Evaluate</h3>
+          <p>Every model and pipeline ships with a measurable evaluation harness, not a demo that happened to work once.</p>
+        </div>
+      </li>
+      <li class="approach-step">
+        <span class="approach-index">4</span>
+        <div>
+          <h3>Operate</h3>
+          <p>We hand off with monitoring and documentation in place, or stay on to run it.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-inner">
+      <p class="about-text">
+        Wanx AI is a remote-first research lab founded in Nairobi, working with clients globally.
+        The same rigor we bring to novel research — physics-informed neural networks, neural operators,
+        custom multi-agent RL environments — carries into every client engagement. We're a small team
+        that ships production systems ourselves — no account managers standing between you and the
+        engineers building your system.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-copy">
+        <h2 class="section-title">Tell us what you're building.</h2>
+        <p class="contact-desc">
+          Send a note about the problem you're solving — software, a model, or a pipeline that needs
+          to run at real scale — and we'll get back to you.
+        </p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:agerausten@gmail.com" class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">agerausten@gmail.com ↗</span>
+        </a>
+        <a href="https://wa.me/254743737349" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-label">WhatsApp</span>
+          <span class="contact-link-value">+254 743 737 349 ↗</span>
+        </a>
+        <a href="https://github.com/ageraustine" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-link-label">Engineering lead</span>
+          <span class="contact-link-value">github.com/ageraustine ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>Wanx AI — Nairobi, Kenya · Remote-first, global clients</span>
+  <span>Built and shipped like everything else here.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
