@@ -1,0 +1,27 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="420" cy="180" r="190" stroke="#AD8324" stroke-opacity="0.18" fill="none"/>
+  <circle cx="420" cy="180" r="140" stroke="#AD8324" stroke-opacity="0.28" fill="none"/>
+
+  <!-- envelope -->
+  <g>
+    <rect x="120" y="120" width="300" height="200" rx="16" fill="#FAF3E4" stroke="#8B4A1F" stroke-width="4"/>
+    <path d="M120 136 L270 250 L420 136" stroke="#8B4A1F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- chat bubble -->
+  <g transform="translate(400,260)">
+    <rect x="0" y="0" width="150" height="96" rx="18" fill="#2B2116"/>
+    <path d="M20 96 L20 122 L52 96 Z" fill="#2B2116"/>
+    <circle cx="34" cy="46" r="7" fill="#E3B94E"/>
+    <circle cx="66" cy="46" r="7" fill="#E3B94E"/>
+    <circle cx="98" cy="46" r="7" fill="#D97706"/>
+  </g>
+
+  <!-- pulse accent -->
+  <g transform="translate(160,340)" stroke="#8B4A1F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M0 20 L28 20 L38 -6 L50 46 L62 20 L90 20"/>
+  </g>
+  <circle cx="198" cy="334" r="5" fill="#D97706"/>
+
+  <line x1="0" y1="440" x2="640" y2="440" stroke="#DDCBA0" stroke-width="2"/>
+</svg>
