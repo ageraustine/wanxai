@@ -419,6 +419,15 @@ section { padding: 88px 0; }
 .marquee-item:hover img {
   filter: grayscale(0) opacity(1);
 }
+.marquee-item .wordmark {
+  opacity: 0.55;
+  transition: opacity 0.25s ease, color 0.25s ease;
+  white-space: nowrap;
+}
+.marquee-item:hover .wordmark {
+  opacity: 1;
+  color: var(--gold);
+}
 
 /* ---------- Projects ---------- */
 
