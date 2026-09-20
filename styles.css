@@ -393,7 +393,8 @@ section { padding: 88px 0; }
   align-items: center;
   gap: 72px;
   width: max-content;
-  animation: marquee-scroll 26s linear infinite;
+  min-width: 300vw;
+  animation: marquee-scroll 78s linear infinite;
 }
 .partner-marquee:hover .marquee-track { animation-play-state: paused; }
 @keyframes marquee-scroll {
