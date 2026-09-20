@@ -601,8 +601,9 @@ footer a:hover { color: var(--gold-bright); }
 /* ---------- Page hero (inner pages) ---------- */
 
 .page-hero {
-  padding: 64px 0 56px;
+  padding: 64px 0 0;
   border-bottom: 1px solid var(--line);
+  overflow: hidden;
 }
 .page-hero .eyebrow {
   font-family: 'JetBrains Mono', monospace;
@@ -613,6 +614,36 @@ footer a:hover { color: var(--gold-bright); }
 }
 .page-hero h1 { font-size: clamp(32px, 4.4vw, 48px); margin-top: 10px; max-width: 20ch; }
 .page-hero p { color: var(--muted); font-size: 17px; max-width: 60ch; margin-top: 14px; }
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: end;
+  gap: 24px;
+}
+.page-hero-grid .page-hero-copy { padding-bottom: 56px; }
+.page-hero-grid .page-hero-media {
+  align-self: end;
+  margin-bottom: -2px;
+}
+.page-hero-grid .page-hero-media img { width: 100%; height: auto; display: block; }
+@media (max-width: 900px) {
+  .page-hero-grid { grid-template-columns: 1fr; }
+  .page-hero-grid .page-hero-media { display: none; }
+}
+
+/* ---------- About: process illustration layout ---------- */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+}
+.process-grid .process-media img { width: 100%; height: auto; display: block; }
+@media (max-width: 900px) {
+  .process-grid { grid-template-columns: 1fr; }
+  .process-grid .process-media { max-width: 360px; margin: 0 auto; }
+}
 
 /* ---------- CTA band ---------- */
 

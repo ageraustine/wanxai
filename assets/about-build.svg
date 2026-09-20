@@ -1,0 +1,19 @@
+<svg width="640" height="320" viewBox="0 0 640 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="320" fill="#EAD9AE"/>
+  <circle cx="100" cy="280" r="120" stroke="#AD8324" stroke-opacity="0.2" fill="none"/>
+  <rect x="180" y="70" width="340" height="200" rx="14" fill="#FAF3E4" stroke="#DDCBA0" stroke-width="2"/>
+  <rect x="180" y="70" width="340" height="32" rx="14" fill="#2B2116"/>
+  <rect x="180" y="86" width="340" height="16" fill="#2B2116"/>
+  <circle cx="202" cy="86" r="5" fill="#E3B94E"/>
+  <circle cx="219" cy="86" r="5" fill="#D97706"/>
+  <circle cx="236" cy="86" r="5" fill="#8B4A1F"/>
+  <text x="204" y="140" font-family="'JetBrains Mono', monospace" font-size="13" fill="#8B4A1F">def build():</text>
+  <text x="220" y="164" font-family="'JetBrains Mono', monospace" font-size="13" fill="#AD8324">test()</text>
+  <text x="220" y="186" font-family="'JetBrains Mono', monospace" font-size="13" fill="#AD8324">document()</text>
+  <text x="220" y="208" font-family="'JetBrains Mono', monospace" font-size="13" fill="#E3B94E">ship()</text>
+  <rect x="204" y="228" width="260" height="10" rx="5" fill="#DDCBA0"/>
+  <g transform="translate(500,220)">
+    <rect x="-30" y="-30" width="60" height="60" rx="14" fill="#2B2116"/>
+    <path d="M-12 -4 L-2 6 L14 -14" stroke="#E3B94E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

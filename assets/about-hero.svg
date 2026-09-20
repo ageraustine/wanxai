@@ -1,0 +1,41 @@
+<svg width="640" height="520" viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="440" cy="180" r="200" stroke="#AD8324" stroke-opacity="0.18" fill="none"/>
+  <circle cx="440" cy="180" r="150" stroke="#AD8324" stroke-opacity="0.28" fill="none"/>
+  <circle cx="440" cy="180" r="100" stroke="#AD8324" stroke-opacity="0.38" fill="none"/>
+
+  <!-- Nairobi-ish skyline silhouette -->
+  <g fill="#2B2116">
+    <rect x="60" y="340" width="26" height="140" rx="2"/>
+    <rect x="96" y="300" width="34" height="180" rx="2"/>
+    <rect x="140" y="360" width="22" height="120" rx="2"/>
+    <rect x="172" y="260" width="40" height="220" rx="2"/>
+    <rect x="222" y="320" width="26" height="160" rx="2"/>
+    <rect x="258" y="220" width="30" height="260" rx="2"/>
+    <circle cx="273" cy="205" r="14"/>
+    <rect x="298" y="350" width="24" height="130" rx="2"/>
+    <rect x="330" y="300" width="32" height="180" rx="2"/>
+    <rect x="372" y="380" width="20" height="100" rx="2"/>
+  </g>
+
+  <!-- windows -->
+  <g fill="#E3B94E" opacity="0.85">
+    <rect x="180" y="280" width="6" height="6"/>
+    <rect x="194" y="280" width="6" height="6"/>
+    <rect x="180" y="300" width="6" height="6"/>
+    <rect x="194" y="300" width="6" height="6"/>
+    <rect x="266" y="240" width="6" height="6"/>
+    <rect x="266" y="260" width="6" height="6"/>
+    <rect x="266" y="280" width="6" height="6"/>
+    <rect x="338" y="320" width="6" height="6"/>
+    <rect x="350" y="320" width="6" height="6"/>
+    <rect x="338" y="340" width="6" height="6"/>
+  </g>
+
+  <!-- pulse mark motif echoing the logo -->
+  <g transform="translate(430,150)" stroke="#8B4A1F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M0 30 L34 30 L46 -8 L60 60 L74 30 L108 30"/>
+  </g>
+  <circle cx="476" cy="142" r="6" fill="#D97706"/>
+
+  <line x1="0" y1="480" x2="640" y2="480" stroke="#DDCBA0" stroke-width="2"/>
+</svg>

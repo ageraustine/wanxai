@@ -1,0 +1,26 @@
+<svg width="480" height="560" viewBox="0 0 480 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="240" cy="280" r="220" stroke="#AD8324" stroke-opacity="0.15" fill="none"/>
+  <path d="M110 90 C 260 150, 90 260, 240 320 S 400 460, 260 500"
+        stroke="#8B4A1F" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/>
+
+  <g>
+    <circle cx="110" cy="90" r="14" fill="#2B2116"/>
+    <text x="110" y="95" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#E3B94E" text-anchor="middle">1</text>
+    <text x="140" y="95" font-family="'Inter', sans-serif" font-size="15" fill="#2B2116">Scope honestly</text>
+  </g>
+  <g>
+    <circle cx="240" cy="320" r="14" fill="#2B2116"/>
+    <text x="240" y="325" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#E3B94E" text-anchor="middle">2</text>
+    <text x="270" y="325" font-family="'Inter', sans-serif" font-size="15" fill="#2B2116">Build in the open</text>
+  </g>
+  <g>
+    <circle cx="400" cy="460" r="14" fill="#2B2116"/>
+    <text x="400" y="465" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#E3B94E" text-anchor="middle">3</text>
+    <text x="330" y="490" font-family="'Inter', sans-serif" font-size="15" fill="#2B2116">Train the team</text>
+  </g>
+  <g>
+    <circle cx="260" cy="500" r="14" fill="#AD8324"/>
+    <text x="260" y="505" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#FAF3E4" text-anchor="middle">4</text>
+    <text x="150" y="530" font-family="'Inter', sans-serif" font-size="15" fill="#2B2116">Stay reachable</text>
+  </g>
+</svg>

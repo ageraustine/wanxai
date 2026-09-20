@@ -1,0 +1,21 @@
+<svg width="640" height="320" viewBox="0 0 640 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="320" fill="#EAD9AE"/>
+  <circle cx="540" cy="60" r="130" stroke="#AD8324" stroke-opacity="0.2" fill="none"/>
+
+  <!-- whiteboard -->
+  <rect x="150" y="70" width="220" height="150" rx="10" fill="#FAF3E4" stroke="#8B4A1F" stroke-width="3"/>
+  <line x1="170" y1="110" x2="290" y2="110" stroke="#AD8324" stroke-width="4" stroke-linecap="round"/>
+  <line x1="170" y1="135" x2="330" y2="135" stroke="#DDCBA0" stroke-width="4" stroke-linecap="round"/>
+  <line x1="170" y1="160" x2="260" y2="160" stroke="#DDCBA0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M175 190 l20 -18 l16 12 l30 -26" stroke="#E3B94E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- three people silhouettes -->
+  <g fill="#2B2116">
+    <circle cx="420" cy="200" r="16"/>
+    <path d="M392 260 q28 -34 56 0 z"/>
+    <circle cx="470" cy="190" r="18"/>
+    <path d="M438 258 q32 -38 64 0 z"/>
+    <circle cx="520" cy="205" r="14"/>
+    <path d="M496 258 q24 -30 48 0 z"/>
+  </g>
+</svg>
