@@ -21,6 +21,11 @@
 
 html { scroll-behavior: smooth; }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -48,6 +53,9 @@ a:hover { color: var(--rust); }
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 28px;
+}
+@media (max-width: 420px) {
+  .wrap { padding: 0 18px; }
 }
 
 /* ---------- Nav ---------- */
