@@ -636,7 +636,16 @@ footer a:hover { color: var(--gold-bright); }
 .page-hero-grid .page-hero-media img { width: 100%; height: auto; display: block; }
 @media (max-width: 900px) {
   .page-hero-grid { grid-template-columns: 1fr; }
-  .page-hero-grid .page-hero-media { display: none; }
+  .page-hero-grid .page-hero-copy { padding-bottom: 0; }
+  .page-hero-grid .page-hero-media {
+    max-width: 380px;
+    width: 80%;
+    margin: 28px auto 0;
+    align-self: center;
+  }
+}
+@media (max-width: 480px) {
+  .page-hero-grid .page-hero-media { width: 92%; margin-top: 20px; padding-bottom: 20px; }
 }
 
 /* ---------- About: process illustration layout ---------- */
