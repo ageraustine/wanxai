@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document Generator — Wanx AI</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="documents.css">
+</head>
+<body>
+
+<header class="doc-tool-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/mark.svg" alt="">
+      <span class="brand-text">WANX<span class="brand-ai">AI</span></span>
+    </a>
+    <a href="index.html" class="back-link">&larr; Back to site</a>
+  </div>
+</header>
+
+<!-- ============ PASSCODE GATE ============ -->
+<div class="gate-screen" id="gateScreen">
+  <div class="gate-card">
+    <div class="lock-icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#E3B94E" stroke-width="1.8"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#E3B94E" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </div>
+    <h1>Internal Tool</h1>
+    <p>Enter the passcode to generate quotations, invoices &amp; receipts.</p>
+    <input type="password" id="gateInput" placeholder="Passcode" autocomplete="off">
+    <div class="gate-error" id="gateError"></div>
+    <button class="btn btn-primary" id="gateSubmit">Unlock</button>
+  </div>
+</div>
+
+<!-- ============ DOCUMENT TOOL ============ -->
+<main class="doc-tool" id="docTool">
+  <div class="wrap">
+    <div class="doc-tool-intro">
+      <span class="eyebrow">Internal &middot; Document Generator</span>
+      <h1>Quotations, Invoices &amp; Receipts</h1>
+      <p>Fill in the details and generate a branded, client-ready PDF — no data is saved or sent anywhere, everything happens in this browser.</p>
+    </div>
+
+    <div class="type-switch" id="typeSwitch">
+      <button class="active" data-type="quotation">Quotation<span>Propose pricing &amp; scope</span></button>
+      <button data-type="invoice">Invoice<span>Request payment</span></button>
+      <button data-type="receipt">Receipt<span>Confirm payment received</span></button>
+    </div>
+
+    <div class="doc-grid">
+      <!-- ---------- FORM ---------- -->
+      <div class="form-panel">
+        <h3>Client</h3>
+        <div class="field-row">
+          <div class="field">
+            <label for="clientName">Client / company name</label>
+            <input type="text" id="clientName" placeholder="Agemerald">
+          </div>
+          <div class="field">
+            <label for="clientEmail">Client email</label>
+            <input type="email" id="clientEmail" placeholder="management@agemerald.co.ke">
+          </div>
+        </div>
+
+        <h3>Document details</h3>
+        <div class="field-row">
+          <div class="field">
+            <label for="docNumber">Document number</label>
+            <input type="text" id="docNumber">
+          </div>
+          <div class="field">
+            <label for="docDate">Date</label>
+            <input type="date" id="docDate">
+          </div>
+        </div>
+        <div class="field" id="dueDateField">
+          <label for="docDue">Due / validity</label>
+          <input type="text" id="docDue" placeholder="e.g. Due on receipt, or Valid for 30 days">
+        </div>
+        <div class="field" id="receivedViaField" style="display:none;">
+          <label for="receivedVia">Payment received via</label>
+          <input type="text" id="receivedVia" value="M-Pesa" placeholder="M-Pesa, Bank transfer, Cash…">
+        </div>
+
+        <h3>Items</h3>
+        <div class="items-table" id="itemsTable"></div>
+        <button class="add-item-btn" id="addItemBtn" type="button">+ Add item</button>
+
+        <div class="field" id="amountDueField" style="display:none;">
+          <label for="amountDueOverride">Amount due now (KES)</label>
+          <input type="number" id="amountDueOverride" placeholder="Leave blank to charge the full total">
+          <div class="field-hint">Use this for a deposit or partial payment — e.g. a 40% down payment.</div>
+        </div>
+        <div class="field" id="amountReceivedField" style="display:none;">
+          <label for="amountReceivedOverride">Amount received (KES)</label>
+          <input type="number" id="amountReceivedOverride" placeholder="Leave blank to match the full total">
+        </div>
+        <div class="field" id="balanceNoteField" style="display:none;">
+          <label for="balanceNote">Balance / follow-up note (optional)</label>
+          <input type="text" id="balanceNote" placeholder="e.g. Remaining KES 9,000 due before final handover">
+        </div>
+
+        <h3>Payment</h3>
+        <div class="field-row">
+          <div class="field">
+            <label for="paymentMethod">Payment method</label>
+            <input type="text" id="paymentMethod" value="M-Pesa">
+          </div>
+          <div class="field">
+            <label for="paymentNumber">M-Pesa / account number</label>
+            <input type="text" id="paymentNumber" value="0743 737 349">
+          </div>
+        </div>
+        <div class="field">
+          <label for="notes">Notes / terms (optional, one per line)</label>
+          <textarea id="notes" placeholder="Any additional terms, revision policy, next steps…"></textarea>
+        </div>
+
+        <div class="generate-row">
+          <button class="btn btn-primary" id="generateBtn" type="button">Generate PDF</button>
+          <span id="generateStatus"></span>
+        </div>
+      </div>
+
+      <!-- ---------- LIVE PREVIEW ---------- -->
+      <div class="preview-panel">
+        <h3>Live preview</h3>
+        <div class="pv-doc" id="pvDoc">
+          <div class="pv-empty">Fill in the form to see a preview here.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf-autotable.min.js"></script>
+<script src="documents.js"></script>
+</body>
+</html>
